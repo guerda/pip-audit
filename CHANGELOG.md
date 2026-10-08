@@ -13,6 +13,15 @@ All versions prior to 0.0.9 are untracked.
   the system. This enables using it behind corporate networks with custom
   SSL certificates. Importing the certificate authorities is achieved by
   using [`truststore`](https://pypi.org/project/truststore).
+### Fixed
+
+* Editable requirements skipped with `--skip-editable` no longer require a hash
+  when auditing hashed requirements files
+  ([#1024](https://github.com/pypa/pip-audit/issues/1024))
+
+* Deduplicate vulnerability results that share the same PYSEC identifier.
+  ([#1068](https://github.com/pypa/pip-audit/issues/1068))
+
 ## [2.10.1]
 
 ### Fixed
